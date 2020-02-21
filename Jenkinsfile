@@ -1,6 +1,6 @@
 @Library('qclab-pipeline-library')
 import org.qclab.*
-def profile = new getProfileType()
+def profile = new getProfileType().getProfileType()
 echo profile
 pipeline {
   agent any
