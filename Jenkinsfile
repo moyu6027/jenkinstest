@@ -1,4 +1,7 @@
-@Library('qclab-pipeline-library')_
+@Library('qclab-pipeline-library')
+import org.qclab.*
+def profile = new getProfileType()
+echo profile
 pipeline {
   agent any
   stages {
