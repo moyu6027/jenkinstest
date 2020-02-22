@@ -1,0 +1,14 @@
+<suite name="Suite" parallel="classes" thread-count="1">
+    <test verbose="2" preserve-order="true" name="TestDebug">
+        <classes>
+            <class name="MutationIT" />
+
+            <class name="MutationIT">
+                <methods>
+                    <include name="testIsPositive"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
