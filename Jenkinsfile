@@ -10,6 +10,7 @@ pipeline {
         echo 'hello,demo'
         sayHello 'sean'
         echo "mvn verify -P${profile}"
+        bat "mvn verify"
       }
     }
 
