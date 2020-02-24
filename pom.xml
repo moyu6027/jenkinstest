@@ -163,7 +163,7 @@
                         </goals>
                         <configuration>
                             <files>
-                                <file>src/${build.profile.id}/resources/testing.properties</file>
+                                <file>${basedir}/profiles/${build.profile.id}/config.properties</file>
                             </files>
                         </configuration>
                     </execution>
