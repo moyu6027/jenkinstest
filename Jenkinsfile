@@ -10,7 +10,7 @@ pipeline {
         echo 'hello,demo'
         sayHello 'sean'
         echo "mvn verify -P${profile}"
-        bat "mvn verify -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
+        bat "mvn verify -Pintegration-test -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
       }
     }
 
